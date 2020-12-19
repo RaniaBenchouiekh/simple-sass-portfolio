@@ -1,5 +1,5 @@
 $primary-color: #6b6a6a;
-$secondary-color: #73d9f8;
+$secondary-color: #50d6ff;
 $show-home-image: true;
 $home-image: url(../img/imageBG.jpg);
 $background-opacity: 0.8;
@@ -12,8 +12,9 @@ $background-opacity: 0.8;
   @if $show-home-image {
     &#bg-img {
       background: $home-image;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
       background-attachment: fixed;
-      background-size: cover;
 
       &:after {
         content: "";
