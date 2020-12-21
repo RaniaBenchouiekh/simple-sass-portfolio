@@ -1,6 +1,5 @@
 @import "config";
 @import "menu";
-@import "mobile";
 
 * {
   box-sizing: border-box;
@@ -9,7 +8,7 @@
 body {
   @include background;
   background: $primary-color;
-  color: #fff;
+  color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -52,7 +51,8 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%;
+  //height: 100%;
+  min-height: calc(100vh - 60px);
 
   .icons {
     margin-top: 1rem;
@@ -67,10 +67,192 @@ main {
     }
   }
 
-  &#home {
-    overflow: hidden;
-    h1 {
-      margin-top: 20vh;
+  .about-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about-info .bio-image {
+    height: 260px;
+    width: 260px;
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 3px solid;
+  }
+
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.5rem;
+  }
+
+  .about-info .job-1 {
+    grid-area: job1;
+  }
+
+  .about-info .job-2 {
+    grid-area: job2;
+  }
+
+  .about-info .job-3 {
+    grid-area: job3;
+  }
+
+  .about-info .job {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+  }
+
+  .projects {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .projects img {
+    width: 100%;
+    border: 3px #fff solid;
+  }
+
+  .projects img:hover {
+    opacity: 0.5;
+    border-color: $secondary-color;
+    transition: all 0.5s ease-out;
+  }
+
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .boxes div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out;
+  }
+
+  .boxes div:hover {
+    padding: 0.5rem 1.5rem;
+    background: $secondary-color;
+    color: #000;
+  }
+
+  .boxes div:hover span {
+    color: #000;
+  }
+
+  .btn,
+  .btn-dark,
+  .btn-light {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+  }
+
+  .btn:hover,
+  .btn-dark:hover,
+  .btn-light:hover {
+    background: $secondary-color;
+    color: #000;
+  }
+
+  .btn-dark {
+    background: black;
+    color: #fff;
+  }
+
+  .btn-light {
+    background: #c4c4c4;
+    color: #333;
+  }
+
+  @media screen and (min-width: 1171px) {
+    .projects {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    .projects {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    main {
+      align-items: center;
+      text-align: center;
+    }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    ul.menu-nav,
+    div.menu-branding {
+      float: none;
+      width: 100%;
+      min-height: 0;
+    }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0);
+    }
+    .menu-nav {
+      height: 75vh;
+      transform: translate3d(-100%, 0, 0);
+      font-size: 24px;
+    }
+    .menu-branding {
+      height: 25vh;
+      transform: translate3d(100%, 0, 0);
+    }
+    .menu-branding .portrait {
+      background: url("../img/me.jpg");
+      width: 150px;
+      height: 150px;
+    }
+    .about-info {
+      grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+      grid-template-columns: 1fr;
+    }
+    .projects {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    main {
+      padding: 2rem;
+    }
+    main #home h1 {
+      margin-top: 10vh;
+    }
+    main .lg-heading {
+      margin-top: 1rem;
+      font-size: 5rem;
+    }
+    .projects {
+      grid-template-columns: 1fr;
     }
   }
 }
+
+.main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2b2b2b;
+  color: #fff;
+  height: 60px;
+  font-size: 13px;
+}
+
+@import "mobile";
