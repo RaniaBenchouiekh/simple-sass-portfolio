@@ -214,14 +214,15 @@ main {
     display: block;
     padding: 0.5rem 1rem;
     border: 0;
-    margin-bottom: 0.3rem; }
+    margin-bottom: 0.3rem;
+    font-size: 14px; }
   main .btn:hover,
   main .btn-dark:hover,
   main .btn-light:hover {
     background: #50d6ff;
-    color: #000; }
+    color: #353535; }
   main .btn-dark {
-    background: black;
+    background: #353535;
     color: #fff; }
   main .btn-light {
     background: #c4c4c4;

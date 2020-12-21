@@ -67,6 +67,7 @@ main {
     }
   }
 
+  // About
   .about-info {
     display: grid;
     grid-gap: 30px;
@@ -105,6 +106,8 @@ main {
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
+
+  //Work/Projects
 
   .projects {
     display: grid;
@@ -149,6 +152,8 @@ main {
     color: #000;
   }
 
+  //Button styles
+
   .btn,
   .btn-dark,
   .btn-light {
@@ -156,17 +161,18 @@ main {
     padding: 0.5rem 1rem;
     border: 0;
     margin-bottom: 0.3rem;
+    font-size: 14px;
   }
 
   .btn:hover,
   .btn-dark:hover,
   .btn-light:hover {
     background: $secondary-color;
-    color: #000;
+    color: rgb(53, 53, 53);
   }
 
   .btn-dark {
-    background: black;
+    background: rgb(53, 53, 53);
     color: #fff;
   }
 
