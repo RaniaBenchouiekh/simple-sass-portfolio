@@ -126,6 +126,8 @@ main {
     transition: all 0.5s ease-out;
   }
 
+  //Contact Page
+
   .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -135,9 +137,9 @@ main {
   }
 
   .boxes div {
-    font-size: 2rem;
+    font-size: 1rem;
     border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
+    padding: 1.5rem 1.5rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out;
   }
@@ -145,11 +147,17 @@ main {
   .boxes div:hover {
     padding: 0.5rem 1.5rem;
     background: $secondary-color;
-    color: #000;
+    color: rgb(53, 53, 53);
   }
 
   .boxes div:hover span {
-    color: #000;
+    color: rgb(71, 71, 71);
+    font-weight: bold;
+  }
+
+  .boxes .text-secondary {
+    font-size: 1rem;
+    font-weight: bold;
   }
 
   //Button styles
@@ -180,6 +188,8 @@ main {
     background: #c4c4c4;
     color: #333;
   }
+
+  //All Medias
 
   @media screen and (min-width: 1171px) {
     .projects {
@@ -244,7 +254,7 @@ main {
     }
     main .lg-heading {
       margin-top: 1rem;
-      font-size: 5rem;
+      font-size: 3rem;
     }
     .projects {
       grid-template-columns: 1fr;
