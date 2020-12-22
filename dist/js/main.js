@@ -1,3 +1,4 @@
+//This file is responsible for the menu actions (show/hide menu)
 // Select DOM Items
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');

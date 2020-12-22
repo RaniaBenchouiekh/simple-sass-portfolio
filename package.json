@@ -1,14 +1,17 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Responsive Portfolio website",
+  "description": "Responsive Portfolio Website",
   "main": "index.js",
+  "homepage": "https://RaniaBenchouiekh.github.io/MyPortfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive" 
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Rania Benchouiekh",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^3.1.0",
     "node-sass": "^5.0.0"
   }
 }
