@@ -185,7 +185,9 @@ main {
     grid-template-columns: repeat(3, 1fr); }
   main .projects img {
     width: 100%;
-    border: 3px #fff solid; }
+    height: 70%;
+    border: 3px #fff solid;
+    cursor: pointer; }
   main .projects img:hover {
     opacity: 0.5;
     border-color: #50d6ff;
