@@ -74,7 +74,7 @@ This command is executed from a script in the **package.json** file :
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   }
 ```
-What this script means is : Run the **node-sass** program, it will watch the **scss/** folder by using the **-w** flag, transform the scss code to regular css then output that to the **dist/css** folder using the **-o** flag, and finally the **--recursive** flag is used to prevent partials problems.
+The script means : Run the **node-sass** program, it will watch the **scss/** folder by using the **-w** flag, transform the scss code to regular css then output that to the **dist/css** folder using the **-o** flag, and finally the **--recursive** flag is used to prevent partials problems.
 
 ## Credits
 
