@@ -7,23 +7,23 @@ A simple, minimalist and responsive Portfolio. Created using HTML, CSS, SCSS, Ja
 
 <table>
   <tr>
-    <td>Home page</td>
-    <td>Menu page</td>
+    <td><b>Home page</b></td>
+    <td><b>Menu page</b></td>
   </tr>
   <tr>
     <td><img src="screens/home-screen.png" width="470"/></td>
     <td><img src="screens/menu-screen.png" width="470"/></td>
   </tr>
   <tr>
-    <td>About page</td>
-    <td>Work page</td>
+    <td><b>About page</b></td>
+    <td><b>Work page</b></td>
   </tr>
   <tr>
     <td><img src="screens/about-screen.png" width="470"/></td>
     <td><img src="screens/work-screen.png" width="470"/></td>
   </tr>
    <tr>
-    <td>Contact page</td>
+    <td><b>Contact page</b></td>
   </tr>
   <tr>
     <td><img src="screens/contact-screen.png" width="470"/></td>
