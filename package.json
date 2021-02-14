@@ -2,7 +2,7 @@
   "name": "portfolio",
   "description": "Responsive Portfolio Website",
   "main": "index.js",
-  "homepage": "",
+  "homepage": "https://github.com/RaniaBenchouiekh/Simple_Sass_Portfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
