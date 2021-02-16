@@ -41,7 +41,7 @@ A simple, minimalist and responsive Portfolio. Created using HTML, CSS, SCSS, Ja
 ## Run and deploy the projet
 
 ####  Install dependencies
-You can use [**Github Pages**](https://pages.github.com/) to deploy your project, since the project is simple and does not include a backend. In this case, you will have to install dependencies such as **gh-pages** for deployement purposes, and **node-sass** for the run. Both are present in the **package.json** file, so all you have to run is the following command :
+You can use [**Github Pages**](https://pages.github.com/) to deploy the project, since it is simple and does not include a backend. In this case, you will have to install dependencies such as **gh-pages** for deployement purposes, and **node-sass** for the run. Both are present in the **package.json** file, so all you have to run is the following command :
 
 ```bash
 npm install 
